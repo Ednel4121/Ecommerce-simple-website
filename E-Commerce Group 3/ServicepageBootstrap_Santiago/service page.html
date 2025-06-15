@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services</title>
+  <!-- Bootstrap CSS for layout and components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS for service page styling -->
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+  <!-- Header with logo and navigation links -->
+  <header>
+    <div class="container header">
+      <div class="logo">Nike</div>
+      <nav>
+        <ul>
+          <!-- Navigation links to other main pages -->
+          <li><a href="../HomepageHTML_Arancillo/homepage_Arancillo.html">Home</a></li>
+          <li><a href="../BlogpageHTML_Iloilo/blogpage_Iloilo.html">Blog page</a></li>
+          <li><a href="../GallerypageHTML_AQUINO/aquino.html">Gallery</a></li>
+          <li><a href="../TestimonialBootstrap_ Arancillo/Testimonial_Arancillo.HTML">Testimonial</a></li>
+          <li><a href="../AboutpageHTML_Magsakay/about page.html">About Us</a></li>
+          <li><a href="../ContactpageHTML_Santiago/Contact_santiago.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <!-- Services Section: displays all available services as cards -->
+    <section class="py-4">
+      <div>
+        <div class="row g-4">
+
+          <!-- Free Shipping Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleFreeShipping()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">🚚</div>
+              <h5 class="card-title">Free Shipping</h5>
+              <p class="card-text">Enjoy free shipping on all orders over $50. Fast and reliable delivery to your doorstep.</p>
+            </div>
+          </div>
+
+          <!-- 24/7 Customer Support Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleCustomerSupport()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">💬</div>
+              <h5 class="card-title">24/7 Customer Support</h5>
+              <p class="card-text">Our team is here to assist you around the clock with any questions or concerns.</p>
+            </div>
+          </div>
+
+          <!-- Easy Returns Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleEasyReturns()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">🔄</div>
+              <h5 class="card-title">Easy Returns</h5>
+              <p class="card-text">Not satisfied? Return your items within 30 days hassle-free.</p>
+            </div>
+          </div>
+
+          <!-- Secure Payments Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleSecurePayments()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">🔒</div>
+              <h5 class="card-title">Secure Payments</h5>
+              <p class="card-text">Your payment information is encrypted and secure with us.</p>
+            </div>
+          </div>
+
+          <!-- Gift Packaging Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleGiftPackaging()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">🎁</div>
+              <h5 class="card-title">Gift Packaging</h5>
+              <p class="card-text">Add a special touch with our premium gift packaging options.</p>
+            </div>
+          </div>
+
+          <!-- Order Tracking Service Card -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="handleOrderTracking()" class="card service-card shadow-sm p-4 text-center h-100">
+              <div class="icon mb-3">📦</div>
+              <h5 class="card-title">Order Tracking</h5>
+              <p class="card-text">Track your order in real-time from warehouse to delivery.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Footer with copyright -->
+  <footer class="bg-transparent text-white text-center py-bottom">
+    <p>© 2025 Nike shoes. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS for service card click handlers -->
+  <script src="scripts.js"></script>
+</body>
+</html>

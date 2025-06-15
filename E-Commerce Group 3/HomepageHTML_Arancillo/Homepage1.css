@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles: font, background, and text color */
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #ff4c29;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main heading in header */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Navigation link styles */
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    background-color: #000000;
+    color: #ff4c29;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Optional: If you want the whole li to have a background on hover */
+nav ul li:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+/* Hero section with background image and center alignment */
+.hero {
+    background: url('Bg nike logo.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Hero section title styles */
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Hero section paragraph styles */
+.hero-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Products section layout */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background: #000;
+}
+
+/* Individual product card styles */
+.product-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+/* Product card hover effect */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Product image styles */
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product name/title styles */
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Button styles */
+button {
+    background-color: #ff4c29;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #e03e1c;
+}
+
+/* Footer styles */
+footer {
+    background: red;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Navigation and Layout for tablets */
+@media (max-width: 900px) {
+    nav ul {
+        gap: 15px;
+    }
+    .products {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .product-card {
+        flex: 1 1 300px;
+        min-width: 220px;
+        max-width: 350px;
+    }
+}
+
+/* Responsive Navigation and Layout for mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+    .hero {
+        height: 35vh;
+        padding: 10px 0;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .products {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 5px;
+    }
+    .product-card {
+        width: 98%;
+        margin-bottom: 15px;
+        min-width: unset;
+        max-width: unset;
+    }
+    .product-card img {
+        height: 160px;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    footer {
+        font-size: 0.8rem;
+        padding: 8px 0;
+    }
+}

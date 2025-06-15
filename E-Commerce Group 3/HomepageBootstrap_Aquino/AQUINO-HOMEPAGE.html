@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Homepage</title>
+  <!-- Bootstrap CSS CDN for styling and layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS for additional homepage styles -->
+  <link rel="stylesheet" href="Homepage-Aquino.css">
+</head>
+<body>
+  <!-- Navigation bar using Bootstrap classes -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand fw-bold" >Nike</a>
+      <!-- Hamburger menu for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="../HomepageHTML_Arancillo/homepage_Arancillo.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="../GallerypageHTML_AQUINO/aquino.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="../PricingpageBootstrap_Iloilo/pricing page.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="../ContactpageHTML_Santiago/Contact_santiago.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with main headline and call-to-action -->
+  <section class="hero">
+    <div class="container">
+      <h1>Nike basic website</h1>
+      <p>Create fully responsive, modern interfaces quickly using Bootstrap 5 with a clean and professional design.</p>
+      <a href="../HomepageHTML_Arancillo/homepage_Arancillo.html" class="btn btn-primary" role="button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features section highlighting key benefits -->
+  <section class="features">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card h-100 text-center">
+          <!-- Feature icon and description -->
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Development</h3>
+          <p>Leverage Bootstrap's extensive components and utilities to build layouts quickly and efficiently.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card h-100 text-center">
+          <div class="feature-icon">📱</div>
+          <h3>Responsive Design</h3>
+          <p>Your site will be mobile-friendly and adaptable across all devices with Bootstrap’s grid system.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card h-100 text-center">
+          <div class="feature-icon">🎨</div>
+          <h3>Customizable</h3>
+          <p>Easily customize themes and components with Sass variables and Bootstrap’s flexible utilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with copyright -->
+  <footer>
+     © 2025 Nike shoes. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS Bundle for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

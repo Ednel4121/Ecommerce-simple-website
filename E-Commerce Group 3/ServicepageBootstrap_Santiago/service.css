@@ -1,0 +1,114 @@
+body {
+    background: url('../HomepageHTML_Arancillo/Bg\ nike\ logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f7f7f7; /* Ensures text is readable */
+}
+
+/* Layout ng header container gamit ang flex */
+.container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2vw;
+}
+
+/* Style ng logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Navigation link styles */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* Hover effect para sa navigation link */
+nav a:hover {
+    background: #978a8a;
+    color: #ff9e0d;
+}
+
+/* Responsive Navigation para sa mobile */
+@media (max-width: 600px) {
+    .container.header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0.7rem 0.5rem;
+    }
+    .logo {
+        align-self: flex-start;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+}
+
+/* Transition effect para sa service card */
+.service-card {
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon style para sa service card */
+.icon {
+    font-size: 2.5rem;
+}
+
+/* (Unused) logo selector - maaaring tanggalin kung hindi ginagamit */
+logo {
+    text-align: left center;
+}
+
+/* Duplicate .container.header para sa dagdag na padding sa maliit na screen */
+.container.header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 1rem 1rem;
+}
+
+/* Add top padding sa main content para hindi matakpan ng header */
+@media (max-width: 600px) {
+    .bg, main, .container, section.py-5 {
+        padding-top: 150px !important;
+    }
+}

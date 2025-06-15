@@ -1,0 +1,129 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #ff4c29;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.faq-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 1rem;
+  letter-spacing: -1px;
+}
+
+.nike-line {
+  width: 60px;
+  height: 4px;
+  background-color: #111;
+  margin: 0 auto 2rem;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.accordion-header {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.25rem;
+  text-align: left;
+  width: 100%;
+  color: #111;
+  transition: background 0.2s ease-in-out;
+}
+
+.accordion-header:hover,
+.accordion-header:focus {
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem 2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.container {
+  max-width: 800px;
+}
+
+@media (max-width: 576px) {
+  .faq-header {
+    font-size: 2rem;
+  }
+
+  .accordion-header {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Navigation and Layout */
+@media (max-width: 900px) {
+  nav ul {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+  .faq-header {
+    font-size: 1.5rem;
+    padding: 1.2rem 0.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+}

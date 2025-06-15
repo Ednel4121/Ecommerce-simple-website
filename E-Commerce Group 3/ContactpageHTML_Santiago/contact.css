@@ -1,0 +1,452 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Reset default browser styles and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: rgb(255, 34, 34);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation bar styles */
+nav {
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navigation links styles */
+nav ul {
+  display: flex;
+  flex-direction: row;   /* Horizontal layout */
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation anchor styles */
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+  color: #e91e63;
+  background: #fff;
+}
+
+/* Navigation list item hover effect */
+nav ul li:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+/* Responsive Navigation for tablets */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  .logo {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  nav ul {
+    gap: 15px;
+  }
+}
+
+/* Responsive Navigation for mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .logo {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Set font for body and form elements */
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main form container styles */
+.form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Contact form panel styles */
+.contact-form {
+  background-color: rgba(140, 146, 172, 1);
+  position: relative;
+}
+
+/* Decorative circle styles */
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, #fafafa);
+  position: absolute;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -40px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+/* Decorative square for contact form */
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: rgba(140, 146, 172, 1);
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+/* Form padding and positioning */
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Title styles */
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+/* Input container for floating labels */
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+/* Input field styles */
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+/* Textarea styles */
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+/* Floating label styles */
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+/* Floating label for textarea */
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+/* Submit button styles */
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: rgba(140, 146, 172, 1);
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+/* Submit button hover effect */
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Span for floating label underline animation */
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+/* Underline animation for floating label */
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: rgba(140, 146, 172, 1);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+/* Floating label active state */
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+/* Underline animation active state */
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+/* Contact info panel styles */
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+/* Contact info title color */
+.contact-info .title {
+  color: #000000;
+}
+
+/* Contact info text styles */
+.text {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+/* Contact information row styles */
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* Icon styles for contact info */
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+/* Decorative circle for contact info */
+.contact-info:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid rgba(140, 146, 172, 1);
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+/* Decorative square shape */
+.square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .contact-info:before {
+    display: none;
+  }
+
+  .square,
+  .big-circle {
+    display: none;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+}
+
+/* Background image for the body */
+body {
+  background: url('Bg nike logo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Container layout and spacing */
+.container {
+  min-height: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  padding-top: 250px; 
+}
